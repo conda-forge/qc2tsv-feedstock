@@ -25,7 +25,7 @@ requirements:
   run:
     - autouri
     - caper
-    - miniwdl >= 1.13
+    - miniwdl >=1.13
     - pandas
     - python >=${{ python_min }}
 
