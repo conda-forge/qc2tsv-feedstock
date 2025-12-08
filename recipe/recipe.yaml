@@ -2,6 +2,7 @@ schema_version: 1
 
 context:
   version: 0.2.0
+  python_min: 3.10
 
 package:
   name: qc2tsv
@@ -24,19 +25,18 @@ requirements:
   run:
     - autouri
     - caper
+    - miniwdl >= 1.13
     - pandas
     - python >=${{ python_min }}
 
 tests:
-  - python:
-      imports:
-        - qc2tsv
   - requirements:
       run:
         - pip
         - python =${{ python_min }}
     script:
       - pip check
+      - qc2tsv --help
 
 about:
   summary: Converts multiple QC JSONs to a spread sheet (TSV/CSV)
