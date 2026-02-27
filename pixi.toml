@@ -5,7 +5,7 @@
 
 [workspace]
 name = "qc2tsv-feedstock"
-version = "3.53.3"  # conda-smithy version used to generate this file
+version = "3.55.1"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/qc2tsv-feedstock"
 authors = ["@conda-forge/qc2tsv"]
 channels = ["conda-forge"]
